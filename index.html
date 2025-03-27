@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ochello - Professional website">
+    <meta name="generator" content="Website Generator">
+    <meta name="theme-color" content="hsl(333, 65%, 40%)">
+    <title>Ochello</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body{font-family:'Poppins', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'Poppins', sans-serif}
+        section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
+        header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
+        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}
+        .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
+        ::-webkit-scrollbar{width:8px;height:8px}
+        ::-webkit-scrollbar-track{background:#f1f1f1}
+        ::-webkit-scrollbar-thumb{background:hsl(333, 65%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(333, 65%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(333, 65%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        @media print{[data-animate]{opacity:1;transform:none}}
+    </style>
+    
+    <script>
+        tailwind.config={theme:{extend:{colors:{primary:{"50":"hsl(333, 65%, 95%)","100":"hsl(333, 65%, 90%)","200":"hsl(333, 65%, 80%)","300":"hsl(333, 65%, 70%)","400":"hsl(333, 65%, 60%)","500":"hsl(333, 65%, 50%)","600":"hsl(333, 65%, 40%)","700":"hsl(333, 65%, 30%)","800":"hsl(333, 65%, 20%)","900":"hsl(333, 65%, 10%)"}},fontFamily:{sans:[''Poppins'','system-ui','sans-serif'],heading:[''Poppins'','sans-serif']}}}}
+    </script>
+</head>
+<body class="antialiased text-gray-800">
+    <main>
+        
+<!-- NAV SECTION -->
+
+
+<!-- HEADER SECTION -->
+<header class="relative bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url(/images/gf97a2d252486c846d38dbea0891634c9b4feb9901f441962eaff85d25ae3cc6e7605706a633c4adce0975438b35ef3b4040412bec789fef25d1322ae79ef28a0_640.jpg);">
+    <div class="absolute inset-0 bg-gradient-to-br from-black to-transparent opacity-60"></div>
+
+    <nav class="absolute top-0 left-0 w-full p-6 flex items-center justify-between z-20 text-white">
+        <div class="flex items-center">
+            <a href="#" class="text-2xl font-semibold">
+                Ochello
+            </a>
+        </div>
+
+        <div class="hidden md:flex space-x-6">
+            <a href="#" class="hover:text-green-200 transition-colors duration-200">Exhibitions</a>
+            <a href="#" class="hover:text-green-200 transition-colors duration-200">Artists</a>
+            <a href="#" class="hover:text-green-200 transition-colors duration-200">Collections</a>
+            <a href="#" class="hover:text-green-200 transition-colors duration-200">Visit</a>
+            <a href="#" class="hover:text-green-200 transition-colors duration-200">Contact</a>
+        </div>
+
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden absolute top-0 left-0 w-full h-screen bg-gray-900 bg-opacity-95 z-30 p-6">
+        <div class="flex justify-end">
+            <button id="mobile-menu-close" class="text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col items-center mt-20 space-y-6">
+            <a href="#" class="text-white text-lg hover:text-green-200 transition-colors duration-200">Exhibitions</a>
+            <a href="#" class="text-white text-lg hover:text-green-200 transition-colors duration-200">Artists</a>
+            <a href="#" class="text-white text-lg hover:text-green-200 transition-colors duration-200">Collections</a>
+            <a href="#" class="text-white text-lg hover:text-green-200 transition-colors duration-200">Visit</a>
+            <a href="#" class="text-white text-lg hover:text-green-200 transition-colors duration-200">Contact</a>
+        </div>
+    </div>
+
+    <div class="relative z-10 text-center text-white">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4" data-animate="fade-in-down">Discover Art, Discover Yourself</h1>
+        <p class="text-lg md:text-xl mb-8" data-animate="fade-in">Explore curated collections and experience the power of artistic expression.</p>
+        <a href="#" class="bg-green-500 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-300" data-animate="fade-in-up">
+            View Current Exhibitions
+        </a>
+    </div>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenuClose = document.getElementById('mobile-menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        mobileMenuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    </script>
+</header>
+
+<!-- ABOUT SECTION -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ochello Art Galleries</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom CSS to ensure consistent appearance */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f3ef; /* Light beige background */
+            color: #54494B; /* Dark brown text */
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #A68A64 0%, #C8B090 100%); /* Brown/beige gradient */
+        }
+
+        .btn-primary {
+            background-color: #7A9D96; /* Green accent */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #5c7c76;
+        }
+
+        .shadow-custom {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Ensure consistent rounded corners */
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem;
+        }
+
+        /* Consistent padding/margin */
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .p-6 {
+            padding: 1.5rem;
+        }
+
+        .p-8 {
+            padding: 2rem;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            color: #33292A; /* Darker brown for headings */
+        }
+
+        /* Mobile menu styling */
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 60px; /* Adjust based on header height */
+            left: 0;
+            width: 100%;
+            background-color: #f5f3ef;
+            padding: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            z-index: 50;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        /* Ensure images scale properly */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Removes extra space below image */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .sm\:text-sm {
+                font-size: 0.875rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .md\:text-base {
+                font-size: 1rem;
+            }
+        }
+
+        /* Data animate attributes */
+        [data-animate] {
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            transform: translateY(20px);
+        }
+
+        [data-animate].animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="gradient-bg py-4 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-white">Ochello</a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="/" class="text-white hover:text-gray-200">Home</a>
+                <a href="/exhibitions" class="text-white hover:text-gray-200">Exhibitions</a>
+                <a href="/artists" class="text-white hover:text-gray-200">Artists</a>
+                <a href="/about" class="text-white hover:text-gray-200">About</a>
+                <a href="/contact" class="text-white hover:text-gray-200">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="/" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Home</a>
+            <a href="/exhibitions" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Exhibitions</a>
+            <a href="/artists" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Artists</a>
+            <a href="/about" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">About</a>
+            <a href="/contact" class="block py-2 px-4 text-gray-800 hover:bg-gray-200">Contact</a>
+        </div>
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 bg-white">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+            <div class="md:order-2" data-animate="true">
+                <img src="/images/gece2c25efa54b1725d06b21c0a52d323f20c3324ef68eb9fc17e2aba45f1ee09eaadeb217b2b4d3b1497fd4ed9421ecd5d79da54226af2686d311f92633a9801_640.jpg" alt="Gallery Interior" class="rounded-xl shadow-custom">
+            </div>
+
+            <div class="md:order-1" data-animate="true">
+                <h2 class="text-3xl font-semibold mb-4">About Ochello Art Galleries</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Welcome to Ochello, a sanctuary for art enthusiasts and a platform for emerging and established artists alike. Founded in 2008 by art collector and visionary, Eleanor Vance, Ochello Art Galleries has become a cornerstone of the contemporary art scene.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Our mission is to cultivate a deeper appreciation for art by showcasing diverse perspectives and fostering meaningful dialogues. We believe that art has the power to transform, inspire, and connect us all.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Ochello features two distinct gallery spaces: The Main Gallery, which hosts large-scale exhibitions of internationally renowned artists, and The Annex, a dedicated space for showcasing the work of emerging talent. We also host regular artist talks, workshops, and community events.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Our team of passionate art professionals is dedicated to providing exceptional service and creating a welcoming environment for all visitors. We invite you to explore our collection, engage with our artists, and discover the transformative power of art.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+     <!-- Footer Section -->
+     <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Ochello Art Galleries</h3>
+                <p class="text-gray-400">
+                    Showcasing diverse perspectives and fostering meaningful dialogues in the art world.
+                </p>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/exhibitions" class="hover:text-white">Exhibitions</a></li>
+                    <li><a href="/artists" class="hover:text-white">Artists</a></li>
+                    <li><a href="/about" class="hover:text-white">About</a></li>
+                    <li><a href="/contact" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Visit Us</h3>
+                <p class="text-gray-400">
+                    123 Art Street<br>
+                    Cityville, State 12345<br>
+                    Open Daily: 10am - 6pm
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                <p class="text-gray-400">
+                    Email: info@ochellogallery.com<br>
+                    Phone: (555) 123-4567
+                </p>
+                <form class="mt-4">
+                    <input type="email" placeholder="Your Email" class="bg-gray-700 text-white px-3 py-2 rounded-md w-full mb-2">
+                    <button class="btn-primary w-full">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="text-center mt-8 text-gray-500">
+            &copy; 2024 Ochello Art Galleries. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Animation on Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                    observer.unobserve(entry.target); // Stop observing after animation
+                }
+            });
+        });
+
+        document.querySelectorAll('[data-animate]').forEach((element) => {
+            observer.observe(element);
+        });
+    </script>
+
+</body>
+</html>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="py-16 bg-beige-100">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-brown-700 mb-4 data-animate" data-animate="fade-in-down">Our Services</h2>
+            <p class="text-brown-500 text-lg data-animate" data-animate="fade-in">We offer a range of services to help you discover, acquire, and appreciate art.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Service 1: Art Acquisition -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate" data-animate="fade-in-left">
+                <img src="/images/g60dcf0aa7acf8d3978143ddb072427180bdaae9d14600c2d398a9cc0fc56d8a9e3d9446de2abf52b83551d10bf815abfd719099cf58e7136eb27a01abebd723c_640.jpg" alt="Art Acquisition" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-brown-700 mb-2">Art Acquisition</h3>
+                    <p class="text-brown-500 mb-4">Our expert consultants guide you through the process of acquiring fine art, matching your taste and investment goals.</p>
+                    <ul class="list-disc list-inside text-brown-500">
+                        <li>Personalized art consultation</li>
+                        <li>Sourcing from private collections and auctions</li>
+                        <li>Due diligence and authentication</li>
+                        <li>Negotiation and acquisition assistance</li>
+                    </ul>
+                    <a href="#" class="mt-4 inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service 2: Art Appraisal -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate" data-animate="fade-in">
+                <img src="/images/gece2c25efa54b1725d06b21c0a52d323f20c3324ef68eb9fc17e2aba45f1ee09eaadeb217b2b4d3b1497fd4ed9421ecd5d79da54226af2686d311f92633a9801_640.jpg" alt="Art Appraisal" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-brown-700 mb-2">Art Appraisal</h3>
+                    <p class="text-brown-500 mb-4">Get accurate and reliable art appraisals for insurance, estate planning, or sale purposes.</p>
+                    <ul class="list-disc list-inside text-brown-500">
+                        <li>Certified appraisal services</li>
+                        <li>Market value assessment</li>
+                        <li>Detailed condition reports</li>
+                        <li>Expert documentation</li>
+                    </ul>
+                    <a href="#" class="mt-4 inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service 3: Art Curation -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate" data-animate="fade-in-right">
+                <img src="/images/g7d6ca25edf9de5dfb0d0f3b455799d7180bc1a71b15aff5148f3c87739a017bba275cd538a2bad123bda769f012223282047f12794d7afd989ee3b02975f7f9e_640.jpg" alt="Art Curation" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-brown-700 mb-2">Art Curation</h3>
+                    <p class="text-brown-500 mb-4">Let us curate a unique art collection for your home or office, reflecting your personal style and preferences.</p>
+                    <ul class="list-disc list-inside text-brown-500">
+                        <li>Personalized art selection</li>
+                        <li>Space planning and installation</li>
+                        <li>Collection management</li>
+                        <li>Art education and appreciation</li>
+                    </ul>
+                    <a href="#" class="mt-4 inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+                </div>
+            </div>
+
+             <!-- Service 4: Restoration & Conservation -->
+             <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate" data-animate="fade-in-left">
+                <img src="/images/gf97a2d252486c846d38dbea0891634c9b4feb9901f441962eaff85d25ae3cc6e7605706a633c4adce0975438b35ef3b4040412bec789fef25d1322ae79ef28a0_640.jpg" alt="Art Restoration" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-brown-700 mb-2">Restoration & Conservation</h3>
+                    <p class="text-brown-500 mb-4">Preserve your art for generations to come with our expert restoration and conservation services.</p>
+                    <ul class="list-disc list-inside text-brown-500">
+                        <li>Cleaning and repair</li>
+                        <li>Structural stabilization</li>
+                        <li>Retouching and inpainting</li>
+                        <li>Preventive conservation</li>
+                    </ul>
+                    <a href="#" class="mt-4 inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service 5: Art Transportation -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate" data-animate="fade-in">
+                <img src="/api/placeholder/640/480" alt="Art Transportation" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-brown-700 mb-2">Art Transportation</h3>
+                    <p class="text-brown-500 mb-4">Secure and reliable transportation of your valuable artwork, locally and internationally.</p>
+                    <ul class="list-disc list-inside text-brown-500">
+                        <li>Climate-controlled vehicles</li>
+                        <li>Custom packing and crating</li>
+                        <li>Insurance coverage</li>
+                        <li>Expert handling and installation</li>
+                    </ul>
+                    <a href="#" class="mt-4 inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES SECTION -->
+<section id="features" class="bg-beige py-16 px-6 md:px-12 lg:px-24">
+  <div class="container mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-4xl font-bold text-brown-dark mb-4 data-animate='fade-down'">Step into a World of Art</h2>
+      <p class="text-gray-600 leading-relaxed data-animate='fade-up' data-delay='200'>
+        Ochello Art Galleries invites you to explore a curated collection of exceptional artworks, spanning diverse styles and mediums. Discover pieces that resonate with your soul and enrich your life.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Feature 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate='slide-in-left'">
+        <img class="w-full h-64 object-cover object-center" src="/images/g60dcf0aa7acf8d3978143ddb072427180bdaae9d14600c2d398a9cc0fc56d8a9e3d9446de2abf52b83551d10bf815abfd719099cf58e7136eb27a01abebd723c_640.jpg" alt="Modern Art" loading="lazy">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-brown-dark mb-2">Exclusive Collections</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Browse our meticulously curated collections featuring both established masters and emerging talents.  Find the perfect piece to elevate your space.
+          </p>
+          <a href="#" class="inline-block mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+            Explore Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate='fade-in'">
+        <img class="w-full h-64 object-cover object-center" src="/images/gece2c25efa54b1725d06b21c0a52d323f20c3324ef68eb9fc17e2aba45f1ee09eaadeb217b2b4d3b1497fd4ed9421ecd5d79da54226af2686d311f92633a9801_640.jpg" alt="Sculptures" loading="lazy">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-brown-dark mb-2">Expert Art Consultation</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Our experienced art consultants provide personalized guidance to help you discover artworks that align with your taste and investment goals.
+          </p>
+          <a href="#" class="inline-block mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+            Schedule a Consultation
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate='slide-in-right'">
+        <img class="w-full h-64 object-cover object-center" src="/images/g7d6ca25edf9de5dfb0d0f3b455799d7180bc1a71b15aff5148f3c87739a017bba275cd538a2bad123bda769f012223282047f12794d7afd989ee3b02975f7f9e_640.jpg" alt="Abstract Art" loading="lazy">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-brown-dark mb-2">Exclusive Events & Exhibitions</h3>
+          <p class="text-gray-700 leading-relaxed">
+            Attend our exclusive events and exhibitions featuring emerging artists and renowned masters.  Experience art in a vibrant and engaging atmosphere.
+          </p>
+          <a href="#" class="inline-block mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+            View Events
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate='slide-in-left'">
+        <img class="w-full h-64 object-cover object-center" src="/images/gf97a2d252486c846d38dbea0891634c9b4feb9901f441962eaff85d25ae3cc6e7605706a633c4adce0975438b35ef3b4040412bec789fef25d1322ae79ef28a0_640.jpg" alt="Contemporary Art" loading="lazy">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-brown-dark mb-2">Art Acquisition Services</h3>
+          <p class="text-gray-700 leading-relaxed">
+            We provide comprehensive art acquisition services, including sourcing, valuation, and authentication, ensuring a seamless and secure purchasing experience.
+          </p>
+          <a href="#" class="inline-block mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden data-animate='fade-in'">
+        <h3 class="text-xl font-semibold text-brown-dark p-6 mb-2">Art Investment Opportunities</h3>
+        <p class="text-gray-700 leading-relaxed p-6">
+          Explore the potential of art as an investment. Our team provides insights and guidance on building a diversified art portfolio.
+        </p>
+        <div class="flex justify-center">
+          <a href="#" class="inline-block mb-6 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+            Investment Guide
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials" class="py-16 bg-beige-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-semibold text-center text-brown-800 mb-8 data-animate fade-in">
+      What Our Patrons Say
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 data-animate slide-in">
+
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col justify-between">
+        <div>
+          <p class="text-gray-700 mb-4">
+            "Ochello is more than just an art gallery; it's an experience. The curated collection is stunning, and the staff is incredibly knowledgeable and passionate. I always find something new to appreciate."
+          </p>
+          <div class="flex items-center mb-2">
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <div class="flex items-center mt-4">
+          <img src="/api/placeholder/50/50" alt="Sarah Miller" class="rounded-full w-10 h-10 mr-3">
+          <div>
+            <p class="font-semibold text-brown-700">Sarah Miller</p>
+            <p class="text-sm text-gray-500">Art Collector</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col justify-between">
+        <div>
+          <p class="text-gray-700 mb-4">
+            "I recently purchased a stunning piece from Ochello, and the entire process was seamless. From the initial consultation to the delivery, their attention to detail and commitment to customer satisfaction were exceptional."
+          </p>
+          <div class="flex items-center mb-2">
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-gray-300 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <div class="flex items-center mt-4">
+          <img src="/api/placeholder/50/50" alt="David Lee" class="rounded-full w-10 h-10 mr-3">
+          <div>
+            <p class="font-semibold text-brown-700">David Lee</p>
+            <p class="text-sm text-gray-500">New Collector</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-xl shadow-md p-6 flex flex-col justify-between">
+        <div>
+          <p class="text-gray-700 mb-4">
+            "As an artist myself, I appreciate the dedication Ochello has to showcasing diverse and emerging talent. Their gallery provides a platform for artists to connect with a wider audience, and I'm grateful for their support of the arts community."
+          </p>
+          <div class="flex items-center mb-2">
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+            <svg class="w-5 h-5 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2H15a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v6H5V5z" clip-rule="evenodd"></path></svg>
+          </div>
+        </div>
+        <div class="flex items-center mt-4">
+          <img src="/api/placeholder/50/50" alt="Emily Carter" class="rounded-full w-10 h-10 mr-3">
+          <div>
+            <p class="font-semibold text-brown-700">Emily Carter</p>
+            <p class="text-sm text-gray-500">Local Artist</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ochello Art Galleries</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom Styles */
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+        }
+        .transition-opacity {
+            transition-property: opacity;
+            transition-duration: 0.3s;
+        }
+    </style>
+</head>
+<body class="bg-beige font-sans">
+
+    <!-- Header -->
+    <header class="bg-brown text-white py-6 md:py-8 lg:py-10 relative">
+        <div class="absolute inset-0">
+            <img src="/images/g60dcf0aa7acf8d3978143ddb072427180bdaae9d14600c2d398a9cc0fc56d8a9e3d9446de2abf52b83551d10bf815abfd719099cf58e7136eb27a01abebd723c_640.jpg" alt="Gallery Interior" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl md:text-3xl font-bold">Ochello</a>
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="hover:text-green-300 transition-opacity">Exhibitions</a>
+                    <a href="#" class="hover:text-green-300 transition-opacity">Artists</a>
+                    <a href="#" class="hover:text-green-300 transition-opacity">Visit</a>
+                    <a href="#" class="hover:text-green-300 transition-opacity">Contact</a>
+                    <a href="#" class="hover:text-green-300 transition-opacity">Shop</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brown absolute top-full left-0 w-full z-20 py-4">
+            <div class="container mx-auto px-4">
+                <a href="#" class="block py-2 hover:text-green-300 transition-opacity">Exhibitions</a>
+                <a href="#" class="block py-2 hover:text-green-300 transition-opacity">Artists</a>
+                <a href="#" class="block py-2 hover:text-green-300 transition-opacity">Visit</a>
+                <a href="#" class="block py-2 hover:text-green-300 transition-opacity">Contact</a>
+                <a href="#" class="block py-2 hover:text-green-300 transition-opacity">Shop</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-beige">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-semibold text-brown mb-4" data-animate="fade-in">Contact Us</h2>
+                <p class="text-gray-700" data-animate="fade-in" data-animate-delay="0.2">We'd love to hear from you. Visit our gallery or send us a message.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class="bg-white shadow-md rounded-lg p-6 md:p-8" data-animate="slide-in-left">
+                    <h3 class="text-xl font-semibold text-brown mb-4">Send a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="shadow appearance-none border rounded-lg w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline">Send</button>
+                    </form>
+                </div>
+
+                <!-- Gallery Information -->
+                <div class="bg-white shadow-md rounded-lg p-6 md:p-8" data-animate="slide-in-right">
+                    <h3 class="text-xl font-semibold text-brown mb-4">Visit Us</h3>
+                    <p class="text-gray-700 mb-4">
+                        Ochello Art Galleries<br>
+                        123 Main Street<br>
+                        Anytown, CA 91234
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        <strong>Phone:</strong> (555) 123-4567<br>
+                        <strong>Email:</strong> info@ochellogallery.com
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        <strong>Opening Hours:</strong><br>
+                        Tuesday - Saturday: 10:00 AM - 6:00 PM<br>
+                        Sunday: 12:00 PM - 5:00 PM<br>
+                        Monday: Closed
+                    </p>
+                    <div class="flex justify-center">
+                        <a href="#" class="text-green-500 hover:text-green-700" aria-label="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href="#" class="text-green-500 hover:text-green-700 ml-4" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-green-500 hover:text-green-700 ml-4" aria-label="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brown text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-lg font-semibold mb-4">About Ochello</h4>
+                <p>Ochello Art Galleries is dedicated to showcasing contemporary art from emerging and established artists. We offer a diverse collection of paintings, sculptures, and mixed media works.</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="list-none">
+                    <li><a href="#" class="hover:text-green-300 transition-opacity">Exhibitions</a></li>
+                    <li><a href="#" class="hover:text-green-300 transition-opacity">Artists</a></li>
+                    <li><a href="#" class="hover:text-green-300 transition-opacity">Visit</a></li>
+                    <li><a href="#" class="hover:text-green-300 transition-opacity">Contact</a></li>
+                    <li><a href="#" class="hover:text-green-300 transition-opacity">Shop</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contact Information</h4>
+                <p>123 Main Street, Anytown, CA 91234</p>
+                <p>Email: info@ochellogallery.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p>&copy; 2024 Ochello Art Galleries. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Basic Animation (Intersection Observer API)
+        const animatedElements = document.querySelectorAll('[data-animate]');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const element = entry.target;
+                    const animationType = element.dataset.animate;
+                    const delay = element.dataset.animateDelay || '0';
+
+                    element.style.animation = `${animationType} 0.8s ease-out ${delay}s forwards`;
+                    element.classList.add('animated'); // Add a class to prevent re-animation
+                    observer.unobserve(element); // Stop observing after animation
+                }
+            });
+        }, { threshold: 0.2 }); // Trigger when 20% of the element is visible
+
+        animatedElements.forEach(element => {
+            element.style.opacity = '0'; // Initially hide the element
+            observer.observe(element);
+        });
+
+        // Define animations (you can add more)
+        const styleSheet = document.createElement("style");
+        styleSheet.type = "text/css";
+        styleSheet.innerText = `
+            @keyframes fade-in {
+                from { opacity: 0; transform: translateY(20px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+
+            @keyframes slide-in-left {
+                from { opacity: 0; transform: translateX(-50px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+
+            @keyframes slide-in-right {
+                from { opacity: 0; transform: translateX(50px); }
+                to { opacity: 1; transform: translateX(0); }
+            }
+        `;
+        document.head.appendChild(styleSheet);
+    </script>
+
+</body>
+</html>
+
+<!-- FOOTER SECTION -->
+<footer class="bg-brown-900 text-beige-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-4">Ochello Art Galleries</h3>
+            <p class="text-sm">
+                Discover a curated collection of contemporary and classic art. We are passionate about connecting artists with art enthusiasts.
+            </p>
+            <div class="mt-4 flex space-x-4">
+                <a href="#" class="hover:text-green-400 transition duration-300" aria-label="Facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#" class="hover:text-green-400 transition duration-300" aria-label="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="hover:text-green-400 transition duration-300" aria-label="Twitter"><i class="fab fa-twitter-square fa-2x"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Explore</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Our Artists</a></li>
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Exhibitions</a></li>
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Collections</a></li>
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Visit Us</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Information</h3>
+            <ul class="space-y-2">
+                <li><a href="#" class="hover:text-green-400 transition duration-300">About Us</a></li>
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Terms of Service</a></li>
+                <li><a href="#" class="hover:text-green-400 transition duration-300">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-semibold mb-4">Contact</h3>
+            <p class="text-sm">
+                123 Art Street, Cityville, State, 12345
+            </p>
+            <p class="text-sm">
+                Email: <a href="mailto:info@ochelloart.com" class="hover:text-green-400 transition duration-300">info@ochelloart.com</a>
+            </p>
+            <p class="text-sm">
+                Phone: (123) 456-7890
+            </p>
+        </div>
+
+    </div>
+
+    <div class="mt-12 text-center border-t border-brown-700 pt-8">
+        <p class="text-sm">
+            &copy; 2024 Ochello Art Galleries. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+    </main>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            // Animation system
+            const observer=new IntersectionObserver(entries=>{
+                entries.forEach((entry,i)=>{
+                    if(entry.isIntersecting){
+                        setTimeout(()=>{
+                            entry.target.classList.add('visible');
+                            // Handle staggered children if using that animation style
+                            if(entry.target.getAttribute('data-animate')==='stagger'){
+                                Array.from(entry.target.children).forEach((child,childIndex)=>{
+                                    child.style.setProperty('--child-index',childIndex);
+                                });
+                            }
+                        },i*100);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },{threshold:0.15,rootMargin:'0px 0px -100px 0px'});
+            
+            document.querySelectorAll('[data-animate]').forEach(el=>observer.observe(el));
+            
+            // Fixed navigation
+            const nav=document.querySelector('nav');
+            if(nav){
+                const handleScroll=()=>{
+                    nav.classList[window.scrollY>100?'add':'remove']('nav-fixed');
+                };
+                window.addEventListener('scroll',handleScroll,{passive:true});
+                handleScroll();
+            }
+            
+            // Smooth scroll
+            document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+                anchor.addEventListener('click',function(e){
+                    e.preventDefault();
+                    const targetId=this.getAttribute('href');
+                    if(targetId==='#')return;
+                    const target=document.querySelector(targetId);
+                    if(target){
+                        const targetPosition=target.getBoundingClientRect().top+window.pageYOffset-(nav?nav.offsetHeight:0)-20;
+                        window.scrollTo({top:targetPosition,behavior:'smooth'});
+                    }
+                });
+            });
+            
+            // Scroll progress indicator
+            const height=Math.max(
+                document.body.scrollHeight,
+                document.body.offsetHeight,
+                document.documentElement.clientHeight,
+                document.documentElement.scrollHeight,
+                document.documentElement.offsetHeight
+            )-window.innerHeight;
+            
+            window.addEventListener('scroll',()=>{
+                document.documentElement.style.setProperty('--scroll-progress',(window.scrollY/height*100)+'%');
+            },{passive:true});
+            
+            // Mobile menu
+            const menuToggle=document.getElementById('mobile-menu-toggle');
+            const mobileMenu=document.getElementById('mobile-menu');
+            if(menuToggle&&mobileMenu){
+                menuToggle.addEventListener('click',()=>{
+                    mobileMenu.classList.toggle('hidden');
+                    document.body.classList.toggle('overflow-hidden');
+                });
+                document.addEventListener('click',e=>{
+                    if(mobileMenu&&!mobileMenu.classList.contains('hidden')&&
+                        menuToggle&&!menuToggle.contains(e.target)&&!mobileMenu.contains(e.target)){
+                        mobileMenu.classList.add('hidden');
+                        document.body.classList.remove('overflow-hidden');
+                    }
+                });
+            }
+            
+            // Accordions
+            document.querySelectorAll('[data-accordion-target]').forEach(btn=>{
+                btn.addEventListener('click',()=>{
+                    const target=document.querySelector(btn.getAttribute('data-accordion-target'));
+                    if(target){
+                        const isExpanded=btn.getAttribute('aria-expanded')==='true';
+                        target.classList.toggle('hidden');
+                        btn.setAttribute('aria-expanded',isExpanded?'false':'true');
+                        const icon=btn.querySelector('.accordion-icon');
+                        if(icon)icon.classList.toggle('rotate-180');
+                    }
+                });
+            });
+            
+            // Form validation (optional enhancement)
+            document.querySelectorAll('form').forEach(form=>{
+                form.addEventListener('submit',function(e){
+                    let valid=true;
+                    const requiredFields=form.querySelectorAll('[required]');
+                    
+                    requiredFields.forEach(field=>{
+                        if(!field.value.trim()){
+                            valid=false;
+                            field.classList.add('border-red-500');
+                            
+                            // Add error message if not already present
+                            let errorMsg=field.parentNode.querySelector('.error-message');
+                            if(!errorMsg){
+                                errorMsg=document.createElement('p');
+                                errorMsg.className='text-red-500 text-sm mt-1 error-message';
+                                errorMsg.textContent='This field is required';
+                                field.parentNode.appendChild(errorMsg);
+                            }
+                        }else{
+                            field.classList.remove('border-red-500');
+                            const errorMsg=field.parentNode.querySelector('.error-message');
+                            if(errorMsg)errorMsg.remove();
+                        }
+                    });
+                    
+                    if(!valid){
+                        e.preventDefault();
+                    }
+                });
+            });
+            
+            // Tabs functionality if present
+            document.querySelectorAll('[data-tabs]').forEach(tabGroup=>{
+                const tabs=tabGroup.querySelectorAll('[data-tab]');
+                const tabContents=document.querySelectorAll('[data-tab-content]');
+                
+                tabs.forEach(tab=>{
+                    tab.addEventListener('click',()=>{
+                        const target=tab.getAttribute('data-tab');
+                        
+                        // Update active tab state
+                        tabs.forEach(t=>t.classList.remove('active-tab','text-primary-600','border-primary-600'));
+                        tab.classList.add('active-tab','text-primary-600','border-primary-600');
+                        
+                        // Show correct content
+                        tabContents.forEach(content=>{
+                            if(content.getAttribute('data-tab-content')===target){
+                                content.classList.remove('hidden');
+                            }else{
+                                content.classList.add('hidden');
+                            }
+                        });
+                    });
+                });
+            });
+            
+            // Carousels
+            document.querySelectorAll('[data-carousel]').forEach(carousel=>{
+                const slides=carousel.querySelectorAll('[data-slide]');
+                const prevBtn=carousel.querySelector('[data-carousel-prev]');
+                const nextBtn=carousel.querySelector('[data-carousel-next]');
+                
+                if(slides.length>0&&prevBtn&&nextBtn){
+                    let current=0,interval=null;
+                    
+                    slides[0].classList.remove('hidden');
+                    
+                    const updateIndicators=()=>{
+                        carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                            ind.classList[i===current?'add':'remove']('bg-primary-600');
+                            ind.classList[i!==current?'add':'remove']('bg-gray-300');
+                        });
+                    };
+                    
+                    const showSlide=idx=>{
+                        slides.forEach(s=>s.classList.add('hidden'));
+                        slides[idx].classList.remove('hidden');
+                        updateIndicators();
+                    };
+                    
+                    nextBtn.addEventListener('click',()=>{
+                        current=(current+1)%slides.length;
+                        showSlide(current);
+                    });
+                    
+                    prevBtn.addEventListener('click',()=>{
+                        current=(current-1+slides.length)%slides.length;
+                        showSlide(current);
+                    });
+                    
+                    updateIndicators();
+                    
+                    const startAuto=()=>{
+                        if(carousel.hasAttribute('data-auto')&&!interval){
+                            interval=setInterval(()=>{
+                                current=(current+1)%slides.length;
+                                showSlide(current);
+                            },5000);
+                        }
+                    };
+                    
+                    carousel.addEventListener('mouseenter',()=>{
+                        if(interval){clearInterval(interval);interval=null;}
+                    });
+                    
+                    carousel.addEventListener('mouseleave',startAuto);
+                    
+                    carousel.querySelectorAll('[data-indicator]').forEach((ind,i)=>{
+                        ind.addEventListener('click',()=>{
+                            current=i;
+                            showSlide(current);
+                        });
+                    });
+                    
+                    startAuto();
+                }
+            });
+            
+            // Initialize counters for stats sections if they exist
+            document.querySelectorAll('[data-counter]').forEach(counter=>{
+                const target=parseInt(counter.getAttribute('data-counter')||'0',10);
+                const duration=1500; // Animation duration in ms
+                const step=Math.ceil(target/50); // How much to increment per step
+                let current=0;
+                
+                const updateCounter=()=>{
+                    current+=step;
+                    if(current>target)current=target;
+                    
+                    counter.textContent=current.toString().replace(/B(?=(d{3})+(?!d))/g,',');
+                    
+                    if(current<target){
+                        requestAnimationFrame(updateCounter);
+                    }
+                };
+                
+                // Start counting when element is in view
+                const observer=new IntersectionObserver(entries=>{
+                    entries.forEach(entry=>{
+                        if(entry.isIntersecting){
+                            updateCounter();
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },{threshold:0.5});
+                
+                observer.observe(counter);
+            });
+        });
+    </script>
+</body>
+</html>

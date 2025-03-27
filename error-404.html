@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Page Not Found - Ochello">
+      <title>Page Not Found - Ochello</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+        
+        body{font-family:'Poppins', system-ui, sans-serif;overflow-x:hidden;width:100%;max-width:100%;margin:0;padding:0}
+        h1,h2,h3,h4,h5,h6{font-family:'Poppins', sans-serif}
+        section,header,footer{width:100vw;max-width:100%;overflow-x:hidden}
+        header{background-size:cover;background-position:center;background-repeat:no-repeat;position:relative}
+        [data-animate]{opacity:0;transform:translateY(20px);transition:opacity .6s ease-out,transform .6s ease-out}[data-animate].visible{opacity:1;transform:translateY(0)}
+        .nav-fixed{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .3s ease;width:100%}
+        ::-webkit-scrollbar{width:8px;height:8px}
+        ::-webkit-scrollbar-track{background:#f1f1f1}
+        ::-webkit-scrollbar-thumb{background:hsl(333, 65%, 40%);border-radius:4px}
+        ::-webkit-scrollbar-thumb:hover{background:hsl(333, 65%, 30%)}
+        body::before{content:'';position:fixed;top:0;left:0;right:0;height:3px;background:hsl(333, 65%, 40%);transform:scaleX(calc(var(--scroll-progress,0%)/100));transform-origin:left;z-index:1000}
+        @media print{[data-animate]{opacity:1;transform:none}}
+    
+        /* Custom CSS to ensure consistent appearance */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f3ef; /* Light beige background */
+            color: #54494B; /* Dark brown text */
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #A68A64 0%, #C8B090 100%); /* Brown/beige gradient */
+        }
+
+        .btn-primary {
+            background-color: #7A9D96; /* Green accent */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #5c7c76;
+        }
+
+        .shadow-custom {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Ensure consistent rounded corners */
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem;
+        }
+
+        /* Consistent padding/margin */
+        .p-4 {
+            padding: 1rem;
+        }
+
+        .p-6 {
+            padding: 1.5rem;
+        }
+
+        .p-8 {
+            padding: 2rem;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            color: #33292A; /* Darker brown for headings */
+        }
+
+        /* Mobile menu styling */
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 60px; /* Adjust based on header height */
+            left: 0;
+            width: 100%;
+            background-color: #f5f3ef;
+            padding: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            z-index: 50;
+        }
+
+        .mobile-menu.active {
+            display: block;
+        }
+
+        /* Ensure images scale properly */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Removes extra space below image */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .sm\:text-sm {
+                font-size: 0.875rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .md\:text-base {
+                font-size: 1rem;
+            }
+        }
+
+        /* Data animate attributes */
+        [data-animate] {
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            transform: translateY(20px);
+        }
+
+        [data-animate].animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    
+        /* Custom Styles */
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+        }
+        .transition-opacity {
+            transition-property: opacity;
+            transition-duration: 0.3s;
+        }
+    
+      </style>
+    </head>
+    <body>
+      <nav class="absolute top-0 left-0 w-full p-6 flex items-center justify-between z-20 text-white">
+        <div class="flex items-center">
+            <a href="#" class="text-2xl font-semibold">
+                Ochello
+            </a>
+        </div>
+
+        <div class="hidden md:flex space-x-6">
+            <a href="#" class="hover:text-green-200 transition-colors duration-200">Exhibitions</a>
+            <a href="#" class="hover:text-green-200 transition-colors duration-200">Artists</a>
+            <a href="#" class="hover:text-green-200 transition-colors duration-200">Collections</a>
+            <a href="#" class="hover:text-green-200 transition-colors duration-200">Visit</a>
+            <a href="#" class="hover:text-green-200 transition-colors duration-200">Contact</a>
+        </div>
+
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+      <header class="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-4 py-12">
+          <h1 class="text-3xl font-bold">Page Not Found - Ochello</h1>
+        </div>
+      </header>
+      <main class="container mx-auto px-4 py-8">
+        
+    <div class="py-12 text-center">
+      <h1 class="text-6xl font-bold mb-4">404</h1>
+      <h2 class="text-2xl mb-6">Page Not Found</h2>
+      <p class="mb-8">We're sorry, but the page you requested could not be found.</p>
+      <div class="mb-8">
+        <img src="/api/placeholder/400/300" alt="Page not found illustration" class="mx-auto rounded">
+      </div>
+      <a href="index.html" class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">
+        Return to Homepage
+      </a>
+    </div>
+      </main>
+      <footer class="bg-gray-800 text-white py-12 px-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Ochello Art Galleries</h3>
+                <p class="text-gray-400">
+                    Showcasing diverse perspectives and fostering meaningful dialogues in the art world.
+                </p>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="/" class="hover:text-white">Home</a></li>
+                    <li><a href="/exhibitions" class="hover:text-white">Exhibitions</a></li>
+                    <li><a href="/artists" class="hover:text-white">Artists</a></li>
+                    <li><a href="/about" class="hover:text-white">About</a></li>
+                    <li><a href="/contact" class="hover:text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Visit Us</h3>
+                <p class="text-gray-400">
+                    123 Art Street<br>
+                    Cityville, State 12345<br>
+                    Open Daily: 10am - 6pm
+                </p>
+            </div>
+
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                <p class="text-gray-400">
+                    Email: info@ochellogallery.com<br>
+                    Phone: (555) 123-4567
+                </p>
+                <form class="mt-4">
+                    <input type="email" placeholder="Your Email" class="bg-gray-700 text-white px-3 py-2 rounded-md w-full mb-2">
+                    <button class="btn-primary w-full">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="text-center mt-8 text-gray-500">
+            © 2024 Ochello Art Galleries. All rights reserved.
+        </div>
+    </footer>
+    </body>
+    </html>
